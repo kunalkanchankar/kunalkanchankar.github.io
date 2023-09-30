@@ -140,14 +140,10 @@ header-text{
     transition: 0.9s;
 }
 
-/* ----------------------profile social icon ---------------------------- */
-.social-media-icon{
+ /* ----------------------profile social icon ---------------------------- */
+ /* .social-media-icon{
     margin-top: 30px;
-    /* flex-basis: 10%; */
-    /* position: relative; */
-    /* display: inline-block; */
-    /* margin-left: 30px; */
-    /* text-align: center; */
+  
 }
 .social-media-icon img{
     width: 8%;
@@ -164,19 +160,16 @@ header-text{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    display: flex; /* Change to flex */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    opacity: 0; /* Hidden by default */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0; 
     transition: opacity 0.3s ease-in-out;
 }
 
-.profile-image:hover .social-icons {
-    /* opacity: 1; Display on hover */
-}
+
 
 .icon {
-    /* display: inline-block; */
     width: 40px;
     height: 40px;
     margin: 0 10px;
@@ -187,6 +180,36 @@ header-text{
     color: white;
     font-size: 20px;
     transition: background-color 0.3s ease-in-out;
+} */
+
+
+/* --------------------------------fontgoogle format ---------------------------- */
+
+.social-icons {
+    bottom: 0;
+    display: flex; 
+    justify-content: left; 
+    align-items: center; 
+    margin-top: 5%;
+    
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #333;
+    border-radius: 50%;
+    /* margin-left: 10px; */
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.icon:hover {
+    background-color: #007bff;
+    cursor: pointer;
 }
 
 
@@ -396,7 +419,7 @@ nav .fas{
         cursor: pointer;
     }
     nav .fas:hover{
-        background: white;
+        background: rgb(80, 80, 80);
     }
 }
 

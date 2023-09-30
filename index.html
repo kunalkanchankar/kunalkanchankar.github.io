@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/symbol.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Potfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>        
+                    <img class="fas" onclick="closemenu()"  src="images/symbol.png" alt="">
+                </ul>
+                <img class="fas" src="images/symbol.png" onclick="openmenu()" alt="">
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Kunal</span><br>kanchankar From India <br>Welcome to My Portfolio</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Picture2.jpg" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="me">I am Kunal Kanchankar, an aspiring software developer ready to kick-start my professional journey in the dynamic world of software development. I am poised to contribute positively to the field as a fresher. I have a potent command of multiple programming languages, including Java, HTML, CSS, and Python. My ability to work with these languages provides me to contribute effectively to software development projects. As a continuous learner, I actively seek ways to expand my skill set. By engaging in personal projects and online coding platforms, I further develop my understanding of software engineering best practices.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development</span><br>HTMl <br>CSS <br>JavaScript <br>BootStrap</li>
+                            <li><span>Back-End Development</span><br>Java Technology <br>Python <br>PHP </li>
+                            <li><span>System Languages</span><br>C-Programming <br>C++ Programming  </li>
+                            <li><span>DataBase Languages</span><br>DBMS <br>MySQL <br>NoSQL</li>
+                            <li><span>Platforms</span><br>Android <br>Google <br>Windows  </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>T&P Advance Program on Java Full Stack Development Using Angular at Anudip Foundation, Mumbai.<br>Full Stack Web-Development Intership at Infovirtech, Nagpur.</li>
+                            <li><span>2020 - 2023</span><br>Programming Tutor at Arya Computer Institute (MKCL), Nagpur.</li>
+                            <li><span>2019 - 2021</span><br>Programming Tutor at Disha Computer Institute, Nagpur.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Bechlor's of Engineering (CSE) from Nagpur </li>
+                            <li><span>2020</span><br>Computer Science Polytechnic from Nagpur.</li>
+                            <li><span>2016</span><br>10<sup>th </sup>SSC Board from Nagpur.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------Services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Development</h2>
+                    <p>I'm here to bring your online presence to life. I specialize in creating responsive and visually appealing websites that align with your brand and business goals. From custom web applications to e-commerce platforms, I have the expertise to deliver dynamic and user-friendly web solutions. </p>
+                    <a href="https://en.wikipedia.org/wiki/Web_development">learn more</a>
+                </div>
+                <div>
+                    <h2>Software Development</h2>
+                    <p>I offer tailored solutions to bring your ideas to life. With a passion for innovation and a commitment to quality code, I specialize in custom software development, web applications, and mobile app development. Whether you're a startup in need of a digital presence or an established business seeking software enhancements, I bring expertise and creativity to the table. Let's collaborate to create efficient and elegant software solutions that meet your unique needs.</p>
+                    <a href="https://en.wikipedia.org/wiki/Software_development">learn more</a>
+                </div>
+                <div>
+                    <h2>Application Development</h2>
+                    <p> I'm here to turn your concepts into functional and user-friendly applications. Whether you require mobile apps, web applications, or software solutions, I specialize in crafting efficient and innovative applications. My passion lies in delivering applications that not only meet your business needs but also provide an exceptional user experience.</p>
+                    <a href="https://en.wikipedia.org/wiki/Mobile_app_development">learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- -----------------------portfolio --------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/3bg.jpg" alt="">
+                    <div class="layer">
+                        <h3>Shopping-Cart WebSite</h3>
+                        <p>The Shopping-Cart Website is a dynamic web application developed using the Python programming language, closely integrated with a MySQL database. The primary objective of this project is to facilitate efficient shop management by providing a platform for handling shop billing and organizing products in a systematic manner.</p>
+                        <a href="https://github.com/kunalkanchankar/Shopping-Managment-System-using-Python" target="_blank"><img src="images/forward.png" alt="Social Media Icon"></a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/2bg.jpg" alt="">
+                    <div class="layer">
+                        <h3>Library Managment System</h3>
+                        <p>The Library Management System is a comprehensive software solution designed to efficiently manage library resources, streamline operations, and provide an enhanced experience for librarians and patrons. Developed in Java, this project leverages the power of MySQL for robust data manipulation and incorporates user-friendly UI features to make the system engaging and accessible.</p>
+                        <a href="https://github.com/kunalkanchankar/LibraryManagment" target="_blank"><img src="images/forward.png" alt="Social Media Icon"></a>
+                        
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/1bg.jpg" alt="">
+                    <div class="layer">
+                        <h3>Automated Cart Mobile Application</h3>
+                        <p>The Project is based on Java Program using Android
+                            Studio to build Mobile Applicaiton Named as "TROlly"
+                            and also used embedded chip to read barcode. Main
+                            Objective to build this project is to reduce the waiting
+                            time of customer in billing counter and get a new
+                            experiences to customers while shopping. This Project is
+                            published in IJRAR Publication's, also uploaded in
+                            ResearchGate.</p>
+                        <a href="https://github.com/kunalkanchankar/RGCERTROlly" target="_blank"><img src="images/forward.png" alt="Social Media Icon"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------contact------------------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Mail TO : enjoyfulllife2024@gmail.com</p>
+                    <!-- <div class="social-media-icon" >
+                        <a href="mailto:enjoyfulllife2024@gmail.com" target="_blank"><img src="images/mail.png" alt="Social Media Icon"></a>
+                        <a href="https://kunalkanchankar.blogspot.com/" target="_blank"><img src="images/Blogger.png" alt="Social Media Icon"></a>
+                        <a href="#" target="_blank"><img src="images/twiter.png" alt="Social Media Icon"></a>
+                        <a href="https://www.linkedin.com/in/kunal-kanchankar-49b423235/" target="_blank"><img src="images/linkedin.png" alt="Social Media Icon"></a>
+                        <a href="https://github.com/kunalkanchankar" target="_blank"><img src="images/github.png" alt="Social Media Icon"></a>
+                    </div> -->
+                    <!-- <a href="images/Kunal_kanchankar_CV.pdf" download class="btn btn2">Download My CV</a> -->
+                    <div class="social-icons">
+                        
+                        <i class=""></i>
+                        <a href="mailto:kanchankarkunal18@gmail.com" class="icon"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://kunalkanchankar.blogspot.com/" target="_blank" class="icon"><i class="fa-brands fa-blogger"></i></a>
+                        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/kunal-kanchankar-49b423235/" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/kunalkanchankar" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="images/Kunal_kanchankar_CV.pdf" download class="btn btn2">Download My CV</a>
+                    
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="text" name="Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Libra?Kunal. Made with by Me</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+<!--  
+<script src="script.js">
+</script> -->
+</body>
+</html>

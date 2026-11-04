@@ -1,214 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kunal Kanchankar — Assistant Professor, Computer Science Engineer, Technical Trainer and Software Developer.">
+  <meta name="theme-color" content="#0b0d14">
+  <title>Kunal Kanchankar | Academic & Technology Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/symbol.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>        
-                    <img class="fas" onclick="closemenu()"  src="images/cross.png" alt="">
-                </ul>
-                <img class="fas" src="images/menu.png" onclick="openmenu()" alt="">
-            </nav>
-            <div class="header-text">
-                <p>Software Engineer</p>
-                <h1>Hi, I'm <span>Kunal</span><br>kanchankar From India <br>Welcome to My Portfolio</h1>
-            </div>
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Kunal Kanchankar home"><span>KK</span><b>Kunal Kanchankar</b></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a class="nav-contact" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse"></span> ACADEMIA · SOFTWARE · AI</p>
+          <h1>Hello, I'm <span>Kunal<br>Kanchankar.</span></h1>
+          <h2>Assistant Professor <span class="muted">|</span> Computer Science Engineer</h2>
+          <p class="hero-description">I teach, build and explore technology. My work brings together programming education, software development, student mentoring and applied AI projects.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="button button-outline" href="assets/Kunal_Kanchankar_CV.pdf" download><i class="fa-solid fa-download"></i> Download CV</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/kunal-kanchankar-49b423235/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/kunalkanchankar" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:kanchankarkunal18@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://enjoyfullcodes.blogspot.com/" target="_blank" rel="noopener" aria-label="Blog"><i class="fa-brands fa-blogger-b"></i></a>
+          </div>
         </div>
+        <div class="hero-visual" aria-label="Kunal Kanchankar initials">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="profile-monogram">KK</div>
+          <div class="floating-card card-top"><i class="fa-solid fa-chalkboard-user"></i><span>Teaching & Mentoring</span></div>
+          <div class="floating-card card-bottom"><i class="fa-solid fa-code"></i><span>Building with technology</span></div>
+          <div class="visual-caption">Curiosity · Learning · Innovation</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="eyebrow">WHO I AM</p><h2>About <span>Me</span></h2></div>
+      <div class="about-layout">
+        <div class="about-highlight">
+          <span class="highlight-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+          <h3>Teaching technology.<br>Encouraging builders.</h3>
+          <p>Focused on helping learners understand concepts through practical, hands-on experiences.</p>
+        </div>
+        <div class="about-content">
+          <p class="lead">I am a Computer Science professional working across teaching, programming and software development.</p>
+          <p>As a Teaching Assistant at G. H. Raisoni University, I support B.Tech students through classroom and laboratory sessions, mentoring, project guidance and academic coordination. My teaching experience includes NLP, Web Development, Database Management Systems, MongoDB and Python.</p>
+          <p>I have also worked as a programming tutor and technical trainer, teaching more than 400 students in C, C++, Java, Python and Web Development. I enjoy connecting core computer science concepts with practical applications and emerging technologies.</p>
+          <div class="quick-facts">
+            <div><strong>400+</strong><span>Students trained</span></div>
+            <div><strong>5+</strong><span>Core teaching areas</span></div>
+            <div><strong>2019</strong><span>Started training</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="expertise">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">WHAT I WORK WITH</p><h2>Skills & <span>Expertise</span></h2><p class="section-intro">A combination of programming foundations, application development tools and teaching-focused technical experience.</p></div>
+        <div class="skill-grid">
+          <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div><h3>Programming</h3><div class="tags"><span>C</span><span>C++</span><span>Java</span><span>Python</span></div></article>
+          <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-globe"></i></div><h3>Web Development</h3><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>Bootstrap</span></div></article>
+          <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div><h3>Java Technologies</h3><div class="tags"><span>Spring Boot</span><span>Hibernate</span><span>JDBC</span><span>J2EE</span></div></article>
+          <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-database"></i></div><h3>Databases</h3><div class="tags"><span>MySQL</span><span>NoSQL</span><span>MongoDB</span><span>DBMS</span></div></article>
+          <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Development Tools</h3><div class="tags"><span>Android Studio</span><span>NetBeans</span><span>Visual Studio</span><span>GitHub</span></div></article>
+          <article class="skill-card"><div class="skill-icon"><i class="fa-solid fa-brain"></i></div><h3>Applied Technology</h3><div class="tags"><span>AI-based systems</span><span>OpenCV</span><span>NLP</span><span>Computer Vision</span></div><p class="skill-note">Applied in academic and project work.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="experience">
+      <div class="section-heading"><p class="eyebrow">MY JOURNEY</p><h2>Experience & <span>Teaching</span></h2></div>
+      <div class="timeline">
+        <article class="timeline-item"><div class="timeline-date">Feb 2025 — Present</div><div class="timeline-body"><h3>Teaching Assistant</h3><h4>G. H. Raisoni University, Amravati</h4><p>Supporting B.Tech students as Class Incharge, Lab Incharge and Minor/Major Project Incharge. Teaching NLP, Web Development, DBMS, MongoDB and Python, with responsibilities in mentoring, practical sessions, documentation and departmental coordination.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">Mar 2019 — Apr 2025</div><div class="timeline-body"><h3>Technical Trainer / Programming Tutor</h3><h4>Disha Computer Institute, Nagpur</h4><p>Trained 400+ students in C, C++, Java, Python and Web Development through classroom teaching and one-to-one sessions.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">Sep 2020 — Oct 2024</div><div class="timeline-body"><h3>Technical Trainer / Programming Tutor</h3><h4>Arya Computer Institute (MKCL), Nagpur</h4><p>Programming instruction and learner support.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">Sep 2023 — Jan 2024</div><div class="timeline-body"><h3>Java Development using Angular</h3><h4>Anudip Foundation · Remote</h4><p>Advanced program focused on Java full-stack development using Angular.</p></div></article>
+        <article class="timeline-item"><div class="timeline-date">Aug 2023 — Dec 2023</div><div class="timeline-body"><h3>Full Stack Web Developer</h3><h4>INFOVIRTECH · Remote</h4><p>Full-stack web development internship experience.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading"><p class="eyebrow">SELECTED WORK</p><h2>Projects & <span>Applications</span></h2><p class="section-intro">Academic and development projects described in my CV.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-featured"><div class="project-number">01</div><div class="project-type">AI · Python · OpenCV</div><h3>Accident and Crime Detection Simulation</h3><p>Developed an AI-based simulation to monitor surveillance footage and detect incidents such as accidents, suspicious activities and public-safety threats, supporting automated alerts and emergency response.</p><div class="tags"><span>Python</span><span>OpenCV</span><span>AI</span></div><span class="project-date">May 2026</span></article>
+          <article class="project-card"><div class="project-number">02</div><div class="project-type">Full-stack web application</div><h3>EStateGo — Real Estate Portal</h3><p>A Java Spring Boot and MySQL web application with authentication, designed to help users buy, sell and rent properties.</p><div class="tags"><span>Java</span><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div><span class="project-date">Mar 2025 · CV entry</span></article>
+          <article class="project-card"><div class="project-number">03</div><div class="project-type">Android · Embedded system</div><h3>Automated Shopping Trolley</h3><p>An Android application named Trolley using Java and a barcode reader with an embedded chip, designed to reduce billing-counter waiting time. The project was published in IJRAR and uploaded to ResearchGate.</p><div class="tags"><span>Java</span><span>Android Studio</span><span>Barcode Reader</span></div><span class="project-date">Feb 2023</span><a class="text-link" href="https://github.com/kunalkanchankar/RGCERTROlly" target="_blank" rel="noopener">View project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></article>
+          <article class="project-card"><div class="project-number">04</div><div class="project-type">Web · Database</div><h3>CampusMaiDhundo</h3><p>An online student-to-student rental platform for educational products such as laptops and books, built using HTML, CSS, PHP, JavaScript and MySQL.</p><div class="tags"><span>HTML</span><span>CSS</span><span>PHP</span><span>JavaScript</span><span>MySQL</span></div><span class="project-date">Dec 2022</span></article>
+        </div>
+        <p class="project-footnote">Project descriptions are based on the information available in the CV. Add repository or live-demo links where available.</p>
+      </div>
+    </section>
+
+    <section class="section container" id="education">
+      <div class="section-heading"><p class="eyebrow">ACADEMIC BACKGROUND</p><h2>Education & <span>Certifications</span></h2></div>
+      <div class="education-grid">
+        <div class="education-list">
+          <article class="education-item"><span class="edu-year">2026</span><div><h3>Master's in Computer Science and Engineering</h3><p>G. H. Raisoni SkillTech Nagpur University · Nagpur</p></div></article>
+          <article class="education-item"><span class="edu-year">2023</span><div><h3>Bachelor's in Computer Science and Engineering</h3><p>Rajiv Gandhi College of Engineering and Research · GPA: 6.11</p></div></article>
+          <article class="education-item"><span class="edu-year">2020</span><div><h3>Diploma in Computer Science</h3><p>Anjuman Polytechnic College, Sadar · GPA: 6.77</p></div></article>
+          <article class="education-item"><span class="edu-year">2016</span><div><h3>SSC</h3><p>Blue Diamond English High School · GPA: 6.34</p></div></article>
+        </div>
+        <aside class="cert-card"><div class="skill-icon"><i class="fa-solid fa-award"></i></div><h3>Certifications</h3><ul><li><span>Postman API</span><small>Jan 2024</small></li><li><span>Advanced Program on Java Full Stack Development</span><small>Jan 2024</small></li></ul></aside>
+      </div>
+    </section>
+
+    <section class="research-band">
+      <div class="container research-content"><div><p class="eyebrow">AREAS OF INTEREST</p><h2>Teaching, research & <span>emerging technology.</span></h2><p>Interested in practical learning, AI-enabled applications, computer vision, NLP and software engineering.</p></div><a class="button button-outline" href="mailto:kanchankarkunal18@gmail.com">Let's connect <i class="fa-solid fa-arrow-right"></i></a></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div><a class="brand footer-brand" href="#home"><span>KK</span><b>Kunal Kanchankar</b></a><p class="footer-note">Assistant Professor · Computer Science · Technology</p></div>
+      <div class="footer-contact"><p><i class="fa-solid fa-envelope"></i> <a href="mailto:kanchankarkunal18@gmail.com">kanchankarkunal18@gmail.com</a></p><p><i class="fa-solid fa-phone"></i> <a href="tel:+919766748159">+91 9766748159</a></p><p><i class="fa-solid fa-location-dot"></i> Nagpur, Maharashtra, India</p></div>
+      <div class="footer-social"><a href="https://www.linkedin.com/in/kunal-kanchankar-49b423235/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://github.com/kunalkanchankar" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="https://enjoyfullcodes.blogspot.com/" target="_blank" rel="noopener" aria-label="Blog"><i class="fa-brands fa-blogger-b"></i></a></div>
     </div>
-    <!-- ------------------about -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/Picture2.jpg" alt="">
-                </div>
-
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p class="me">I am Kunal Kanchankar, an aspiring software developer ready to kick-start my professional journey in the dynamic world of software development. I am poised to contribute positively to the field as a fresher. I have a potent command of multiple programming languages, including Java, HTML, CSS, and Python. My ability to work with these languages provides me to contribute effectively to software development projects. As a continuous learner, I actively seek ways to expand my skill set. By engaging in personal projects and online coding platforms, I further develop my understanding of software engineering best practices.</p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Front-End Development</span><br>HTMl <br>CSS <br>JavaScript <br>BootStrap</li>
-                            <li><span>Back-End Development</span><br>Java Technology <br>Python <br>PHP </li>
-                            <li><span>System Languages</span><br>C-Programming <br>C++ Programming  </li>
-                            <li><span>DataBase Languages</span><br>DBMS <br>MySQL <br>NoSQL</li>
-                            <li><span>Platforms</span><br>Android <br>Google <br>Windows  </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2023 - 2024</span><br>T&P Advance Program on Java Full Stack Development Using Angular at Anudip Foundation, Mumbai.<br>Full Stack Web-Development Intership at Infovirtech, Nagpur.</li>
-                            <li><span>2020 - current</span><br>Programming Tutor at Arya Computer Institute (MKCL), Nagpur.</li>
-                            <li><span>2019 - current</span><br>Programming Tutor at Disha Computer Institute, Nagpur.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br>Bechlor's of Engineering (CSE) from Nagpur </li>
-                            <li><span>2020</span><br>Computer Science Polytechnic from Nagpur.</li>
-                            <li><span>2016</span><br>10<sup>th </sup>SSC Board from Nagpur.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ------------------------------Services------------ -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <h2>Web Development</h2>
-                    <p>I'm here to bring your online presence to life. I specialize in creating responsive and visually appealing websites that align with your brand and business goals. From custom web applications to e-commerce platforms, I have the expertise to deliver dynamic and user-friendly web solutions. </p>
-                    <a href="https://en.wikipedia.org/wiki/Web_development">learn more</a>
-                </div>
-                <div>
-                    <h2>Software Development</h2>
-                    <p>I offer tailored solutions to bring your ideas to life. With a passion for innovation and a commitment to quality code, I specialize in custom software development, web applications, and mobile app development. Whether you're a startup in need of a digital presence or an established business seeking software enhancements, I bring expertise and creativity to the table. Let's collaborate to create efficient and elegant software solutions that meet your unique needs.</p>
-                    <a href="https://en.wikipedia.org/wiki/Software_development">learn more</a>
-                </div>
-                <div>
-                    <h2>Application Development</h2>
-                    <p> I'm here to turn your concepts into functional and user-friendly applications. Whether you require mobile apps, web applications, or software solutions, I specialize in crafting efficient and innovative applications. My passion lies in delivering applications that not only meet your business needs but also provide an exceptional user experience.</p>
-                    <a href="https://en.wikipedia.org/wiki/Mobile_app_development">learn more</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-<!-- -----------------------portfolio --------------- -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/3bg.jpg" alt="">
-                    <div class="layer">
-                        <h3>Shopping-Cart WebSite</h3>
-                        <p>The Shopping-Cart Website is a dynamic web application developed using the Python programming language, closely integrated with a MySQL database. The primary objective of this project is to facilitate efficient shop management by providing a platform for handling shop billing and organizing products in a systematic manner.</p>
-                        <a href="https://github.com/kunalkanchankar/Shopping-Managment-System-using-Python" target="_blank"><img src="images/forward.png" alt="Social Media Icon"></a>
-                        
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/2bg.jpg" alt="">
-                    <div class="layer">
-                        <h3>Library Managment System</h3>
-                        <p>The Library Management System is a comprehensive software solution designed to efficiently manage library resources, streamline operations, and provide an enhanced experience for librarians and patrons. Developed in Java, this project leverages the power of MySQL for robust data manipulation and incorporates user-friendly UI features to make the system engaging and accessible.</p>
-                        <a href="https://github.com/kunalkanchankar/LibraryManagment" target="_blank"><img src="images/forward.png" alt="Social Media Icon"></a>
-                        
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/1bg.jpg" alt="">
-                    <div class="layer">
-                        <h3>Automated Cart Mobile Application</h3>
-                        <p>The Project is based on Java Program using Android
-                            Studio to build Mobile Applicaiton Named as "TROlly"
-                            and also used embedded chip to read barcode. Main
-                            Objective to build this project is to reduce the waiting
-                            time of customer in billing counter and get a new
-                            experiences to customers while shopping. This Project is
-                            published in IJRAR Publication's, also uploaded in
-                            ResearchGate.</p>
-                        <a href="https://github.com/kunalkanchankar/RGCERTROlly" target="_blank"><img src="images/forward.png" alt="Social Media Icon"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ------------------------------------contact------------------------------ -->
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p>Mail TO : enjoyfulllife2024@gmail.com</p>
-                    <!-- <div class="social-media-icon" >
-                        <a href="mailto:enjoyfulllife2024@gmail.com" target="_blank"><img src="images/mail.png" alt="Social Media Icon"></a>
-                        <a href="https://kunalkanchankar.blogspot.com/" target="_blank"><img src="images/Blogger.png" alt="Social Media Icon"></a>
-                        <a href="#" target="_blank"><img src="images/twiter.png" alt="Social Media Icon"></a>
-                        <a href="https://www.linkedin.com/in/kunal-kanchankar-49b423235/" target="_blank"><img src="images/linkedin.png" alt="Social Media Icon"></a>
-                        <a href="https://github.com/kunalkanchankar" target="_blank"><img src="images/github.png" alt="Social Media Icon"></a>
-                    </div> -->
-                    <!-- <a href="images/Kunal_kanchankar_CV.pdf" download class="btn btn2">Download My CV</a> -->
-                    <div class="social-icons">
-                        
-                        <i class=""></i>
-                        <a href="mailto:kanchankarkunal18@gmail.com" class="icon"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://enjoyfullcodes.blogspot.com/" target="_blank" class="icon"><i class="fa-brands fa-blogger"></i></a>
-                        <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/kunal-kanchankar-49b423235/" target="_blank" class="icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/kunalkanchankar" target="_blank" class="icon"><i class="fab fa-github"></i></a>
-                    </div>
-                    <a href="images/Kunal_kanchankar_CV.pdf" download class="btn btn2">Download My CV</a>
-                    
-                </div>
-                <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" id="" placeholder="Your Name" required>
-                        <input type="text" name="Email" id="" placeholder="Your Email" required>
-                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright @Libra?Kunal. Made with by Me</p>
-        </div>
-    </div>
-
-
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu")
-
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
-    </script>
-<!--  
-<script src="script.js">
-</script> -->
+    <div class="copyright">© <span id="year"></span> Kunal Kanchankar. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
